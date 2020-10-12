@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+section{
+  height:100vh;
+  background-color: #060c21;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.score{
+  color: #fff;
+  height:20vh;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.score h2{
+  background: linear-gradient(to right,rgb(209, 168, 255),rgb(74, 86, 252));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 30px;
+}
+
+.score p{
+  background: linear-gradient(to left,rgb(209, 168, 255),rgb(74, 86, 252));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align:center;
+  padding:10px;
+  font-size:25px;
+}
+
+.intro{
+  color: rgb(141, 177, 243);;
+  height:50vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition:opacity 0.5s ease ;
+}
+
+.intro h1{
+  background: linear-gradient(to right,rgb(252, 23, 23),rgb(252, 230, 36));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 50px;
+}
+
+.intro button, .match button{
+  width:130px;
+  height:50px;
+  background: none;
+  border:none;
+  color:rgb(141, 177, 243);
+  font-size:20px;
+  background: rgb(2, 28, 77);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1.5px 1.5px 1.5px #776ef5,
+              -1.3px -1.3px 8px #b874fc;
+}
+
+.intro button, .match button:hover{
+  color:rgb(141, 177, 243);
+  background: none;
+}
+
+.match{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  transition:opacity 0.5s ease 0.5s;
+}
+
+.winner{
+  background: linear-gradient(to right,rgb(252, 23, 23),rgb(252, 230, 36));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+.hands{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:15px;
+}
+
+.player-hand{
+  transform: rotateY(180deg);
+  margin:25px;
+  size: 25px;
+}
+
+.options{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.fadeOut{
+  opacity:0;
+  pointer-events: none;
+}
+div.fadeIn{
+  opacity: 1;
+  pointer-events: all;
+}
+
